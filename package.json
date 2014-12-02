@@ -1,0 +1,36 @@
+{
+  "name": "game-stack-object",
+  "version": "1.0.0",
+  "description": "GameStack base object",
+  "main": "./lib/object.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:hylium/game-stack-object.git"
+  },
+  "keywords": [
+    "GameStack"
+  ],
+  "author": "Benjamin Delamarre (d34thwings@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hylium/game-stack-object/issues"
+  },
+  "homepage": "https://github.com/hylium/game-stack-object",
+  "dependencies": {
+    "lodash": "^2.4.1"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-mocha-test": "^0.12.4",
+    "jit-grunt": "^0.9.0",
+    "mocha": "^2.0.1",
+    "should": "^4.3.0",
+  }
+}
