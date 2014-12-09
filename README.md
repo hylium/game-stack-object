@@ -5,8 +5,7 @@ with a given set of values. Since the GameStack requires `lodash`, GSObject use 
 
 ## Usage
 
-GSObject has two methods, `extend` and `create`. These two methods will be pasted on each extended classes. The usage is
-pretty simple, here's an example for `extend`:
+GSObject class has three methods, `extend`, `create` and `createWithMixins`. These three methods will be pasted on each extended classes. The usage is pretty simple, here's an example for `extend`:
 
 ```javascript
 var GSObject = require('game-stack-object');
