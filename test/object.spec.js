@@ -72,6 +72,11 @@ describe('GSObject', function() {
     it('should throw with no parameters', function() {
       GSObject.extend.should.throw();
     });
+
+    it('should contain methods of twice extended class', function() {
+      var result = GSObject.extend({test: function() {}}).extend({}).create({});
+      result.test.should.be.type('function');
+    });
   });
 
   describe('#create', function() {
@@ -131,7 +136,7 @@ describe('GSObject', function() {
               called += arg;
             }
           ]
-        }
+        };
         obj.$emit('test', 123);
         called.should.be.exactly(124);
       });
@@ -142,7 +147,7 @@ describe('GSObject', function() {
         var obj = new GSObject(), called = 0;
         obj.$$eventListeners = {
           test: [function() {}]
-        }
+        };
         obj.$off('test');
         obj.$$eventListeners.test.should.have.length(0);
       });
