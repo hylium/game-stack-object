@@ -74,8 +74,8 @@ describe('GSObject', function() {
     });
 
     it('should contain methods of twice extended class', function() {
-      var result = GSObject.extend({test: function() {}}).extend({}).create({});
-      result.test.should.be.type('function');
+      GSObject.extend({test: function() {}}).extend({}).create({}).test.should.be.type('function');
+      (new (GSObject.extend({test: function() {}}).extend({}))()).test.should.be.type('function');
     });
   });
 
